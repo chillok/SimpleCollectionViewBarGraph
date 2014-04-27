@@ -23,8 +23,6 @@ static NSString *kCellIdentifier = @"UICollectionViewCell";
 
 @property (nonatomic, weak) IBOutlet UICollectionView *collectionView;
 @property (nonatomic, strong) CHCollectionViewGraphLayout *collectionViewLayout;
-
-// this is used to trigger the manual segue
 @property (nonatomic, strong) SelectedAreaViewController *selectedArea;
 
 @end
