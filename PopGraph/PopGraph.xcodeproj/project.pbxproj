@@ -24,7 +24,6 @@
 		69EBCE2B190BE43B00A215A6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 69EBCE29190BE43B00A215A6 /* InfoPlist.strings */; };
 		69EBCE2D190BE43B00A215A6 /* PopGraphTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 69EBCE2C190BE43B00A215A6 /* PopGraphTests.m */; };
 		69EBCE48190BE5AC00A215A6 /* UIView+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = 69EBCE3A190BE5AC00A215A6 /* UIView+Custom.m */; };
-		69EBCE49190BE5AC00A215A6 /* CHCircularCollectionLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 69EBCE3D190BE5AC00A215A6 /* CHCircularCollectionLayout.m */; };
 		69EBCE4A190BE5AC00A215A6 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 69EBCE3F190BE5AC00A215A6 /* CollectionViewCell.m */; };
 		69EBCE4B190BE5AC00A215A6 /* Math.m in Sources */ = {isa = PBXBuildFile; fileRef = 69EBCE42190BE5AC00A215A6 /* Math.m */; };
 		69EBCE4C190BE5AC00A215A6 /* PointObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 69EBCE44190BE5AC00A215A6 /* PointObj.m */; };
@@ -70,8 +69,6 @@
 		69EBCE2C190BE43B00A215A6 /* PopGraphTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PopGraphTests.m; sourceTree = "<group>"; };
 		69EBCE39190BE5AC00A215A6 /* UIView+Custom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Custom.h"; sourceTree = "<group>"; };
 		69EBCE3A190BE5AC00A215A6 /* UIView+Custom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Custom.m"; sourceTree = "<group>"; };
-		69EBCE3C190BE5AC00A215A6 /* CHCircularCollectionLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHCircularCollectionLayout.h; sourceTree = "<group>"; };
-		69EBCE3D190BE5AC00A215A6 /* CHCircularCollectionLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHCircularCollectionLayout.m; sourceTree = "<group>"; };
 		69EBCE3E190BE5AC00A215A6 /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
 		69EBCE3F190BE5AC00A215A6 /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
 		69EBCE41190BE5AC00A215A6 /* Math.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Math.h; sourceTree = "<group>"; };
@@ -204,8 +201,6 @@
 		69EBCE3B190BE5AC00A215A6 /* Collection Elements */ = {
 			isa = PBXGroup;
 			children = (
-				69EBCE3C190BE5AC00A215A6 /* CHCircularCollectionLayout.h */,
-				69EBCE3D190BE5AC00A215A6 /* CHCircularCollectionLayout.m */,
 				69EBCE4E190BE7AC00A215A6 /* CHCollectionViewGraphLayout.h */,
 				69EBCE4F190BE7AC00A215A6 /* CHCollectionViewGraphLayout.m */,
 				69EBCE3E190BE5AC00A215A6 /* CollectionViewCell.h */,
@@ -351,7 +346,6 @@
 				6925A176190D91AB007A2208 /* LoremIpsum.m in Sources */,
 				69EBCE50190BE7AC00A215A6 /* CHCollectionViewGraphLayout.m in Sources */,
 				69EBCE4A190BE5AC00A215A6 /* CollectionViewCell.m in Sources */,
-				69EBCE49190BE5AC00A215A6 /* CHCircularCollectionLayout.m in Sources */,
 				6925A170190D315B007A2208 /* NSArray+Extended.m in Sources */,
 				69EBCE48190BE5AC00A215A6 /* UIView+Custom.m in Sources */,
 				69EBCE0E190BE43B00A215A6 /* main.m in Sources */,
