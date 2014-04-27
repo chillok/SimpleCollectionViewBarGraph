@@ -14,6 +14,9 @@
 - (void)popDownThenUp;
 - (void)popWithScale:(CGFloat)scale andDuration:(CGFloat)duration andCompletion:(void (^)(void))block;
 
+- (void)hideView;
+- (void)showView;
+
 - (void)highlight;
 - (void)round;
 - (void)roundEdges;

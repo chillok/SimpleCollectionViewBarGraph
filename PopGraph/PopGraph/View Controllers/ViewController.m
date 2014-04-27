@@ -41,7 +41,7 @@ static NSString *kCellIdentifier = @"UICollectionViewCell";
     
     [self setupData];
     self.collectionViewLayout = [CHCollectionViewGraphLayout new];
-    self.collectionViewLayout.collectionData = collectionData;
+    [self updateDataWithArray:collectionData];
     [self.collectionView setCollectionViewLayout:self.collectionViewLayout];
     
     GraphItem *item = [collectionData objectAtIndex:0];
@@ -84,15 +84,19 @@ static NSString *kCellIdentifier = @"UICollectionViewCell";
             [self.collectionView insertItemsAtIndexPaths:indexPaths];
         } completion:^(BOOL finished) {
             [self.selectedArea show];
+            [self selectItemAtIndexPath:[NSIndexPath indexPathForItem:0 inSection:0]];
             
-            GraphItem *item = [collectionData objectAtIndex:0];
-            
-            CollectionViewCell *cell = (CollectionViewCell *)[self.collectionView cellForItemAtIndexPath:[NSIndexPath indexPathForItem:0 inSection:0]];
-            
-            CGRect cellRect = [self.collectionView convertRect:cell.frame toView:self.view];
-            [self.selectedArea setDataForItem:item atPoint:cellRect.origin];
         }];
     }
+}
+
+- (void)selectItemAtIndexPath:(NSIndexPath *)indexPath {
+    GraphItem *item = [collectionData objectAtIndex:indexPath.row];
+    
+    CollectionViewCell *cell = (CollectionViewCell *)[self.collectionView cellForItemAtIndexPath:[NSIndexPath indexPathForItem:0 inSection:0]];
+    
+    CGRect cellRect = [self.collectionView convertRect:cell.frame toView:self.view];
+    [self.selectedArea setDataForItem:item atPoint:cellRect.origin];
 }
 
 #pragma mark - UICollectionView setup

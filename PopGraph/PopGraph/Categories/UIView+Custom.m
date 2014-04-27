@@ -34,6 +34,18 @@
     }];
 }
 
+- (void)hideView {
+    [UIView animateWithDuration:0.25 delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
+        self.alpha = 0;
+    } completion:nil];
+}
+
+- (void)showView {
+    [UIView animateWithDuration:0.25 delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
+        self.alpha = 1;
+    } completion:nil];
+}
+
 // -
 
 - (void)highlight {

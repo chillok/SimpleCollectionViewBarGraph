@@ -56,7 +56,6 @@
         [self.view setNeedsUpdateConstraints];
     }
     
-    
     [UIView animateWithDuration:0.25 delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
         [self.view layoutIfNeeded];
         self.containerView.backgroundColor = item.color;
@@ -67,15 +66,11 @@
 }
 
 - (void)hide {
-    [UIView animateWithDuration:0.25 delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
-        self.view.alpha = 0;
-    } completion:nil];
+    [self.view hideView];
 }
 
 - (void)show {
-    [UIView animateWithDuration:0.25 delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
-        self.view.alpha = 1;
-    } completion:nil];
+    [self.view showView];
 }
 
 @end
